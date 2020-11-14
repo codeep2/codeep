@@ -1,16 +1,16 @@
 <template>
   <footer>
     <div class="copyright">
-      <p>Copyright ©{{ new Date().getFullYear() }} | Codeep's blog</p>
+      <p>©{{ new Date().getFullYear() }} | Codeep's blog</p>
     </div>
     <div class="description">
-      <p>
+      <div>
         Powered by
         <span>
           <ul>
             <li
               v-for="tech in technology"
-              :key="tech"
+              :key="tech.content"
               :style="{color: tech.color}"
             >
               {{ tech.content }}
@@ -24,7 +24,7 @@
         <nuxt-link to="/">
           Codeep
         </nuxt-link>
-      </p>
+      </div>
     </div>
   </footer>
 </template>
