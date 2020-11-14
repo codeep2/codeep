@@ -13,8 +13,12 @@
   <rect stroke="#000" transform="rotate(39 256.26220703125,35.59089660644534) " id="svg_1" height="13.45025" width="28.10871" y="28.86578" x="242.20786" stroke-width="1.5" fill="#000000"/>
   <rect stroke="#000" transform="rotate(39 250.53213500976557,54.78556060791017) " id="svg_2" height="13.45025" width="52.85413" y="48.06043" x="224.10507" stroke-width="1.5" fill="#000000"/>
   <rect stroke="#000" transform="rotate(39 239.33839416503903,70.57034301757811) " id="svg_3" height="13.45025" width="93.3003" y="63.84521" x="192.68824" stroke-width="1.5" fill="#000000"/>
-  <rect transform="rotate(39 187.35577392578125,51.720558166503906) " id="svg_4" height="12.70103" width="91.72549" y="45.37005" x="141.49302" stroke-width="1.5" fill="#000000" stroke="#000"/>
-  <rect transform="rotate(39 167.95138549804685,61.206451416015646) " id="svg_5" height="13.45025" width="58.22343" y="54.48132" x="138.83968" stroke-width="1.5" fill="#000000" stroke="#000"/>
+  <rect transform="rotate(39 187.35577392578125,51.720558166503906) " id="svg_4" height="12.70103" width="91.72549" y="45.37005" x="141.49302" stroke-width="1.5" fill="#000000" stroke="#000">
+    <animate attributeName="width" from="91.725485" to="107" dur="0.7s" repeatCount="indefinite" />
+  </rect>
+  <rect transform="rotate(39 167.95138549804685,61.206451416015646) " id="svg_5" height="13.45025" width="58.22343" y="54.48132" x="138.83968" stroke-width="1.5" fill="#000000" stroke="#000">
+    <animate attributeName="width" from="58.22343" to="74" dur="0.7s" repeatCount="indefinite" />
+  </rect>
   <rect transform="rotate(39 212.01773071289068,124.23606872558592) " id="svg_6" height="13.45025" width="185.54706" y="117.51093" x="119.24421" stroke-width="1.5" fill="#000000" stroke="#000"/>
   <rect transform="rotate(39 212.53067016601562,152.06721496582028) " id="svg_7" height="13.45025" width="199.233" y="145.34209" x="112.91417" stroke-width="1.5" fill="#000000" stroke="#000"/>
   <rect transform="rotate(39 211.98762512207026,179.93995666503906) " id="svg_8" height="13.45025" width="206.38078" y="173.21483" x="108.79724" stroke-width="1.5" fill="#000000" stroke="#000"/>
