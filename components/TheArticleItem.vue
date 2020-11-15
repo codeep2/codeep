@@ -1,14 +1,18 @@
 <template>
   <article>
-    <h3 class="article-title">
+    <nuxt-link
+      class="article-title"
+      :to="article.attributes.routeLink"
+    >
       {{ article.attributes.title }}
-    </h3>
+    </nuxt-link>
     <div class="article-meta">
       <span class="article-created">
+        <svg-icon name="time" />
         {{ article.attributes.created }}
       </span>
-      <i class="iconfont icon-time1" />
       <div class="article-tag">
+        <svg-icon name="tag" />
         <span
           v-for="tag in article.attributes.tags"
           :key="tag"
@@ -38,13 +42,30 @@ export default {
   article {
     margin-bottom: 30px;
     .article-title {
+      color: #2f1400;
       font-size: 29px;
-      font-family: Rockwell, Times New Roman;
+      font-family: Lucida Bright, Rockwell, Times New Roman;
     }
     .article-meta {
       display: flex;
+      align-items: center;
+      margin-top: 8px;
       font-size: 14px;
       color: #686868;;
+      .article-created {
+        margin-right: 15px;
+        > svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      .article-tag {
+        > svg {
+          width: 20px;
+          height: 20px;
+          margin-bottom: -4px;
+        }
+      }
     }
   }
 </style>

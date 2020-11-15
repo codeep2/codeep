@@ -1,7 +1,10 @@
 <template>
   <footer>
     <div class="copyright">
-      <p>©{{ new Date().getFullYear() }} | Codeep's blog</p>
+      <p>
+        ©{{ new Date().getFullYear() }}
+        <svg-icon name="heart" /> Codeep's blog
+      </p>
     </div>
     <div class="description">
       <div>
@@ -63,6 +66,18 @@ export default {
         background-color: #dedede;
         opacity: 0.6;
         transition: opacity 3s linear;
+      }
+    }
+    .copyright {
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      svg {
+        width: 16px;
+        height: 16px;
+        margin: 0 3px;
       }
     }
     .description {
