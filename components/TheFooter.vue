@@ -50,14 +50,20 @@ export default {
 
 <style lang="scss" scoped>
   @keyframes loop {
-    0% {transform: translateY(0);}
-    20% {transform: translateY(-20%);}
-    40% {transform: translateY(-40%);}
-    60% {transform: translateY(-60%);}
-    80% {transform: translateY(-80%);}
-    100% {transform: translateY(0%);}
+    0% { transform: translateY(0); }
+    20% { transform: translateY(-20%); }
+    40% { transform: translateY(-40%); }
+    60% { transform: translateY(-60%); }
+    80% { transform: translateY(-80%); }
+    100% { transform: translateY(0%); }
+  }
+  @keyframes pulse {
+      from { transform: scaleX(1); }
+      50% { transform: scale3d(1.08, 1.08, 1.08); }
+      to { transform: scaleX(1); }
   }
   footer {
+    margin: 30px auto;
     text-align: center;
     a {
       color: black;
@@ -78,6 +84,7 @@ export default {
         width: 16px;
         height: 16px;
         margin: 0 3px;
+        animation: pulse 1s linear infinite;
       }
     }
     .description {
@@ -88,7 +95,6 @@ export default {
         overflow: hidden;
         ul {
           display: inline-block;
-          transform: translateY(0);
           animation: loop 12s linear infinite alternate;
         }
       }
