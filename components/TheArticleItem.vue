@@ -40,6 +40,7 @@ export default {
 
 <style lang="scss" scoped>
   article {
+    width: 580px;
     margin-bottom: 30px;
     .article-title {
       color: #2f1400;
@@ -51,7 +52,7 @@ export default {
       align-items: center;
       margin-top: 8px;
       font-size: 14px;
-      color: #686868;;
+      color: #686868;
       .article-created {
         margin-right: 15px;
         > svg {
@@ -66,6 +67,9 @@ export default {
           margin-bottom: -4px;
         }
       }
+    }
+    .article-desc {
+      color: #000000a8;
     }
   }
 </style>

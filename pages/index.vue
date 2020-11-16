@@ -1,7 +1,7 @@
 <template>
   <main>
     <the-article-item
-      v-for="post in posts.default"
+      v-for="post in posts"
       :key="post.routeLink"
       :article="post"
     />
