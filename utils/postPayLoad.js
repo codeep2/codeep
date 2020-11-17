@@ -23,7 +23,7 @@ const postPayLoad = (dirPath) => {
             }
           })
           const post = fm(markdownString)
-          post.body = marked(markdownString)
+          post.body = postProcess(marked(markdownString))
           post.attributes.routeLink = `/posts/${dirName}`
           postsObjList.push(post)
         }
@@ -33,9 +33,10 @@ const postPayLoad = (dirPath) => {
   return postsObjList
 }
 
-// const postProcess = (post) => {
-
-// }
+const postProcess = (post) => {
+  const pattern = /^<hr>[\s\S]*?<hr>/gi
+  return post.replace(pattern, '')
+}
 
 const posts = postPayLoad('./posts')
 
