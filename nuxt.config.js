@@ -16,8 +16,7 @@ export default {
   router: {
     base: ''
   },
-
-  // Global CSS (https://go.nuxtjs.dev/config-css)
+  loading: '@/components/loading.vue',
   css: [
     '@/assets/scss/reset.scss',
     'highlight.js/scss/dracula.scss'
