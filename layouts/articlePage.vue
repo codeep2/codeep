@@ -26,19 +26,20 @@ export default {
 <style lang="scss" scoped>
   .page {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 930px;
   }
   .site-branding {
     .branding {
-      font-size: 28px;
+      font-size: 36px;
       > a {
-        font-family: Georgia;
-        color: #222222;
+        font-family: Goudy Old Style, Garamond, Times New Roman, Georgia;
+        color: #191414;
       }
     }
     > p {
       margin-left: 3px;
       color: #686868;
+      font-size: 14px;
       font-family: Trebuchet MS, Georgia, serif;
     }
   }

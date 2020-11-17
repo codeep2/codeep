@@ -41,20 +41,29 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @keyframes rotating {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+  }
   .page {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 930px;
   }
   .site-branding {
     > h1 {
+      font-size: 36px;
       margin-bottom: 15px;
       > a {
         color: #222222;
         font-family: Georgia;
         svg {
           display: inline-block;
-          width: 19px;
-          height: 19px;
+          width: 21px;
+          height: 21px;
           margin: 0 3px;
           animation: rotating 9s infinite linear;
         }

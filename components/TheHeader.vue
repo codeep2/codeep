@@ -27,19 +27,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @keyframes rotating {
-    0% {
-        transform: rotate(0deg)
-    }
-    100% {
-        transform: rotate(360deg)
-    }
-  }
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 20px;
+    margin: 40px 0;
     .site-header__menu{
       align-self: flex-end;
       padding: 0 8px;

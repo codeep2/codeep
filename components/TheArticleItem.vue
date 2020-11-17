@@ -44,7 +44,7 @@ export default {
     margin-bottom: 30px;
     .article-title {
       color: #2f1400;
-      font-size: 29px;
+      font-size: 26px;
       font-family: Lucida Bright, Rockwell, Times New Roman;
     }
     .article-meta {
