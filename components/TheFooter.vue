@@ -24,7 +24,7 @@
           GitHub
         </a> ·
         Designed by
-        <nuxt-link to="/">
+        <nuxt-link to="/about">
           Codeep
         </nuxt-link>
       </div>
@@ -37,7 +37,7 @@ export default {
   data () {
     return {
       technology: [
-        { content: 'HTML5', color: '#e96228' },
+        { content: 'HTML', color: '#e96228' },
         { content: 'JS', color: '#2f495e' },
         { content: 'Sass', color: '#c76494' },
         { content: 'Vuejs', color: '#41b883' },

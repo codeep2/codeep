@@ -1,13 +1,13 @@
 const express = require('express')
-const posts = require('../utils/postPayLoad')
+const postPayload = require('../utils/postPayLoad')
 
 const app = express()
 
 app.get('/posts', async (req, res) => {
-  await res.json(posts.default)
+  await res.json(postPayload.default.sortedPost)
 })
 
-posts.default.forEach((post) => {
+postPayload.default.posts.forEach((post) => {
   app.get(`${post.attributes.routeLink}`, async (req, res) => {
     await res.json(post)
   })

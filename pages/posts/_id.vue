@@ -3,6 +3,7 @@
     <h1 class="page-title">
       {{ post.attributes.title }}
     </h1>
+    <!-- eslint-disable-next-line vue/no-v-html -->
     <article v-html="post.body" />
   </section>
 </template>
@@ -48,7 +49,7 @@ export default {
       }
       h4 {
         color: #4ec0f5;
-        font-size: 13px;
+        font-size: 15px;
       }
       p,
       li {
@@ -96,6 +97,7 @@ export default {
         padding: 8px;
         border-radius: 10px;
         background-color: #1e1e1e;
+        box-shadow: 0 9px 15px 0px rgba(0,0,0,.4);
         code {
           color: #f8f8f2;
           font-size: 14px;

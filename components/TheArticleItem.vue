@@ -2,19 +2,19 @@
   <article>
     <nuxt-link
       class="article-title"
-      :to="article.attributes.routeLink"
+      :to="article.routeLink"
     >
-      {{ article.attributes.title }}
+      {{ article.title }}
     </nuxt-link>
     <div class="article-meta">
       <span class="article-created">
         <svg-icon name="time" />
-        {{ article.attributes.created }}
+        {{ article.created }}
       </span>
       <div class="article-tag">
         <svg-icon name="tag" />
         <span
-          v-for="tag in article.attributes.tags"
+          v-for="tag in article.tags"
           :key="tag"
         >
           {{ tag }}
@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="article-desc">
-      <p>{{ article.attributes.description }}</p>
+      <p>{{ article.description }}</p>
     </div>
   </article>
 </template>
@@ -50,7 +50,7 @@ export default {
     .article-meta {
       display: flex;
       align-items: center;
-      margin-top: 8px;
+      margin: 8px 0 3px 0;
       font-size: 14px;
       color: #686868;
       .article-created {

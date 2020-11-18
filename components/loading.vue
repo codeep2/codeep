@@ -276,13 +276,13 @@ export default {
         top: 101px;
         right: 93px;
         height: 27px;
-        transition: transform 0.5s .6s;
+        transition: transform 0.5s .65s;
       }
       &.line13 {
         top: 111px;
         right: 104px;
         height: 15px;
-        transition: transform 0.5s .6s;
+        transition: transform 0.5s .7s;
       }
     }
 
