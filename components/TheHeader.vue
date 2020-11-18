@@ -7,7 +7,7 @@
           v-for="title in navTitles"
           :key="title"
         >
-          <nuxt-link :to="`/${title.toLowerCase()}`">
+          <nuxt-link :to="routeLink(title)">
             {{ title }}
           </nuxt-link>
         </li>
@@ -20,7 +20,15 @@
 export default {
   data () {
     return {
-      navTitles: ['Posts', ' Archive', 'About', 'RSS']
+      navTitles: ['Posts', 'Archive', 'About', 'RSS']
+    }
+  },
+  methods: {
+    routeLink (title) {
+      if (title === 'Posts') {
+        return '/'
+      }
+      return `/${title.toLowerCase()}`
     }
   }
 }

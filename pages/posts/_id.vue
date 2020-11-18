@@ -1,10 +1,13 @@
 <template>
-  <section>
+  <section class="page-wrap">
     <h1 class="page-title">
       {{ post.attributes.title }}
     </h1>
-    <!-- eslint-disable-next-line vue/no-v-html -->
-    <article v-html="post.body" />
+    <!-- eslint-disable vue/no-v-html -->
+    <article
+      class="article-item"
+      v-html="post.body"
+    />
   </section>
 </template>
 
@@ -19,14 +22,14 @@ export default {
 </script>
 
 <style lang="scss">
-  section {
+  .page-wrap {
     padding: 10px 20px;
     > h1 {
       font-size: 36px;
       text-align: center;
       margin-bottom: 40px;
     }
-    article {
+    .article-item {
       h1,
       h2, h3,
       h4, h5, h6 {
