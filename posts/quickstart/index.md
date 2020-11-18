@@ -1,7 +1,7 @@
 ---
 title: 中文标题中文标题中文标题
 tags: ['Quickstart']
-created: '2020-9-11'
+created: '2020-09-11'
 description: it's possible to publish Dendron on any platform that can host static sites.
 ---
 
