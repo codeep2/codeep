@@ -20,7 +20,7 @@
 export default {
   data () {
     return {
-      navTitles: ['Posts', 'Archive', 'About', 'RSS']
+      navTitles: ['Posts', 'Archives', 'About', 'RSS']
     }
   },
   methods: {
