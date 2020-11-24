@@ -9,12 +9,18 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: process.env.DEPLOY_ENV === 'GH_PAGES'
+          ? '/dist/favicon.png'
+          : '/favicon.png'
+      }
     ]
   },
 
   router: {
-    base:  process.env.DEPLOY_ENV === 'GH_PAGES'
+    base: process.env.DEPLOY_ENV === 'GH_PAGES'
       ? '/codeep/'
       : ''
   },
