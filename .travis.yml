@@ -12,11 +12,8 @@ branches:
 
 install:
   - yarn install
-  - yarn pregenerate:gh-pages
-  - yarn generate:gh-pages
 
-script:
-  - echo "Skipping tests"
+script: yarn pregenerate:gh-pages && yarn generate:gh-pages
 
 deploy:
   provider: pages
