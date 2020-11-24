@@ -1,7 +1,7 @@
 /*
  * @Date: 2020-11-14 09:52:10
  * @Author: Codeep2
- * @LastEditTime: 2020-11-18 14:57:41
+ * @LastEditTime: 2020-11-24 16:03:29
  * @LastEditors: Codeep2
  * @Description: md 文章处理
  */
@@ -60,4 +60,4 @@ const postProcess = (post) => {
 const posts = postPayLoad('./posts')
 const sortedPost = sortPostsListByDate(postsList)
 
-export default { posts, sortedPost }
+module.exports = { posts, sortedPost }
