@@ -14,7 +14,9 @@ export default {
   },
 
   router: {
-    base: ''
+    base:  process.env.DEPLOY_ENV === 'GH_PAGES'
+      ? '/codeep/'
+      : ''
   },
   loading: '@/components/loading.vue',
   css: [
@@ -26,23 +28,25 @@ export default {
   plugins: [
   ],
 
-  // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
 
-  // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     '@nuxtjs/eslint-module'
   ],
+
   serverMiddleware: [
     '~/api/index.js'
   ],
+
   modules: [
     '@nuxtjs/svg-sprite',
     '@nuxtjs/axios'
   ],
+
   svgSprite: {
     input: '~/assets/svg/'
   },
+
   axios: {
     baseURL: 'http://localhost:3000'
   },
