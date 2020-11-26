@@ -52,6 +52,11 @@ export default {
   .page {
     margin: 0 auto;
     max-width: 930px;
+    height: 100%;
+    padding: 15px 20px;
+  }
+  header {
+    margin-bottom: 40px;
   }
   .site-branding {
     > h1 {

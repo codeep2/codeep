@@ -40,7 +40,6 @@ export default {
 
 <style lang="scss" scoped>
   article {
-    width: 580px;
     margin-bottom: 30px;
     .article-title {
       color: #2f1400;
