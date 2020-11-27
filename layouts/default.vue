@@ -60,15 +60,15 @@ export default {
   }
   .site-branding {
     > h1 {
-      font-size: 36px;
+      font-size: 26px;
       margin-bottom: 15px;
       > a {
         color: #222222;
         font-family: Georgia;
         svg {
           display: inline-block;
-          width: 21px;
-          height: 21px;
+          width: 18px;
+          height: 18px;
           margin: 0 3px;
           animation: rotating 9s infinite linear;
         }
@@ -99,7 +99,7 @@ export default {
       }
       > p {
         font-family: Trebuchet MS, Georgia, serif;
-        text-shadow: 5px 3px 4px;
+        text-shadow: 4px 3px 3px;
         align-self: flex-end;
       }
     }

@@ -33,7 +33,7 @@ export default {
   }
   .site-branding {
     .branding {
-      font-size: 36px;
+      font-size: 26px;
       > a {
         font-family: Goudy Old Style, Garamond, Times New Roman, Georgia;
         color: #191414;

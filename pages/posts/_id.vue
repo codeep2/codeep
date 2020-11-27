@@ -39,12 +39,12 @@ export default {
       h1 {
         color: #333;
         font-size: 28px;
-        padding-bottom: 7px;
-        border-bottom: 1px solid #eaecef;
       }
       h2 {
         color: #333;
         font-size: 23px;
+        padding-bottom: 7px;
+        border-bottom: 1px solid #eaecef;
       }
       h3 {
         color: #333;
@@ -135,6 +135,7 @@ export default {
       }
       a {
         color: #f18c35;
+        margin: 0 5px;
         text-decoration: underline;
         &:hover {
           background-color: #dedede;
