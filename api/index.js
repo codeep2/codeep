@@ -3,13 +3,16 @@ const postPayload = require('../utils/postPayLoad')
 
 const port = process.env.API_PORT
 const app = express()
+const api = process.env.DEPLOY_ENV === 'GH_PAGES'
+  ? '/api'
+  : ''
 
-app.get('/posts', async (req, res) => {
+app.get(`${api}/posts`, async (req, res) => {
   await res.json(postPayload.sortedPost)
 })
 
 postPayload.posts.forEach((post) => {
-  app.get(`${post.attributes.routeLink}`, async (req, res) => {
+  app.get(`${api}${post.attributes.routeLink}`, async (req, res) => {
     await res.json(post)
   })
 })

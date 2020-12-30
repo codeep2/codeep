@@ -5,7 +5,7 @@ export default {
     title: "Codeep's Blog",
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no' },
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
@@ -13,7 +13,7 @@ export default {
         rel: 'icon',
         type: 'image/x-icon',
         href: process.env.DEPLOY_ENV === 'GH_PAGES'
-          ? '/dist/favicon.png'
+          ? '/codeep/favicon.png'
           : '/favicon.png'
       }
     ]

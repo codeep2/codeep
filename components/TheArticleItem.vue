@@ -40,11 +40,12 @@ export default {
 
 <style lang="scss" scoped>
   article {
-    width: 580px;
     margin-bottom: 30px;
+    max-width: 580px;
     .article-title {
-      color: #2f1400;
-      font-size: 26px;
+      color: #333;
+      font-size: 24px;
+      font-weight: 500;
       font-family: Lucida Bright, Rockwell, Times New Roman;
     }
     .article-meta {
@@ -52,7 +53,7 @@ export default {
       align-items: center;
       margin: 8px 0 3px 0;
       font-size: 14px;
-      color: #686868;
+      color: #7a8288;
       .article-created {
         margin-right: 15px;
         > svg {
@@ -69,7 +70,7 @@ export default {
       }
     }
     .article-desc {
-      color: #000000a8;
+      color: #000000e8;
     }
   }
 </style>

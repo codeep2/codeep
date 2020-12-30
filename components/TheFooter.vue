@@ -3,7 +3,10 @@
     <div class="copyright">
       <p>
         ©{{ new Date().getFullYear() }}
-        <svg-icon name="heart" /> Codeep's blog
+        <svg-icon name="heart" />
+        <nuxt-link to="/about">
+          Codeep's
+        </nuxt-link> &nbsp;blog
       </p>
     </div>
     <div class="description">
@@ -22,11 +25,7 @@
         </span> on
         <a href="https://github.com/codeep2">
           GitHub
-        </a> ·
-        Designed by
-        <nuxt-link to="/about">
-          Codeep
-        </nuxt-link>
+        </a>
       </div>
     </div>
   </footer>
@@ -83,7 +82,7 @@ export default {
       svg {
         width: 16px;
         height: 16px;
-        margin: 0 3px;
+        margin: 0 5px;
         animation: pulse 1s linear infinite;
       }
     }

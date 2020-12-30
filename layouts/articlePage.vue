@@ -7,7 +7,6 @@
             Codeep's Blog
           </nuxt-link>
         </h2>
-        <p>Make Things Simple.</p>
       </div>
     </TheHeader>
     <Nuxt />
@@ -26,11 +25,15 @@ export default {
 <style lang="scss" scoped>
   .page {
     margin: 0 auto;
+    padding: 15px 20px;
     max-width: 930px;
+  }
+  header {
+    margin-bottom: 45px;
   }
   .site-branding {
     .branding {
-      font-size: 36px;
+      font-size: 26px;
       > a {
         font-family: Goudy Old Style, Garamond, Times New Roman, Georgia;
         color: #191414;

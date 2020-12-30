@@ -23,7 +23,7 @@ export default {
 
 <style lang="scss">
   .page-wrap {
-    padding: 10px 20px;
+    padding: 10px 0;
     > h1 {
       font-size: 36px;
       text-align: center;
@@ -37,21 +37,21 @@ export default {
         margin-bottom: 15px;
       }
       h1 {
-        color: #2196f3;
+        color: #333;
         font-size: 28px;
       }
       h2 {
-        padding-bottom: 6px;
-        color: #03a9f4;
+        color: #333;
         font-size: 23px;
+        padding-bottom: 7px;
         border-bottom: 1px solid #eaecef;
       }
       h3 {
-        color: #3ab8f1;
+        color: #333;
         font-size: 18px;
       }
       h4 {
-        color: #4ec0f5;
+        color: #333;
         font-size: 15px;
       }
       p,
@@ -135,6 +135,7 @@ export default {
       }
       a {
         color: #f18c35;
+        margin: 0 5px;
         text-decoration: underline;
         &:hover {
           background-color: #dedede;

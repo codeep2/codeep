@@ -18,14 +18,16 @@
           <time>
             {{ post.created.slice(post.created.search('-') + 1 ) }}
           </time>
-          <div class="timeline-node" />
-          <article>
-            <h2>
-              <nuxt-link :to="post.routeLink">
-                {{ post.title }}
-              </nuxt-link>
-            </h2>
-          </article>
+          <div class="timeline-content">
+            <div class="timeline-node" />
+            <article>
+              <h2>
+                <nuxt-link :to="post.routeLink">
+                  {{ post.title }}
+                </nuxt-link>
+              </h2>
+            </article>
+          </div>
         </div>
       </li>
     </ul>
@@ -55,8 +57,8 @@ export default {
 
 <style lang="scss" scoped>
   section {
-    position: relative;
     .timeline-wrapper {
+      position: relative;
       &:before {
         content: '';
         display: block;
@@ -95,7 +97,7 @@ export default {
           line-height: 60px;
           text-align: center;
           border-radius: 50%;
-          margin: 10px 0 15px;
+          margin: 20px 0 25px;
           background-color: #222222;
           box-shadow: 0 0 0 2px white,
                     0 0 0 5px #000;
@@ -108,47 +110,78 @@ export default {
             color: var(--bg-color);
             margin-left: 19px;
           }
-          .timeline-node {
-            width: 13px;
-            height: 13px;
-            margin-left: 15px;
-            border-radius: 50%;
-            background-color: var(--bg-color);
-          }
-          article {
-            position: relative;
-            padding: 12px 8px;
-            margin-left: 15px;
-            border-radius: 3px;
-            background-color: var(--bg-color);
-            box-shadow: 7px 9px 9px 0px rgba(0, 0, 0, 0.2);
-            transition: all 235ms cubic-bezier(0.4, 0, 1, 1) 0s;
-            &:hover {
-              transform: translate3d(0, 2px, 0);
-              box-shadow: 4px 9px 7px -4px rgba(0, 0, 0, 0.2);
+          .timeline-content {
+            display: flex;
+            align-items: center;
+            .timeline-node {
+              width: 13px;
+              height: 13px;
+              margin-left: 11px;
+              border-radius: 50%;
+              background-color: var(--bg-color);
             }
-            > h2 {
-              display: flex;
-              align-items: center;
-              a {
-                color: #fff;
-                font-size: 16px;
-                font-weight: normal;
-                transform: translateZ(0);
+            article {
+              position: relative;
+              padding: 12px 8px;
+              margin-left: 15px;
+              border-radius: 3px;
+              background-color: var(--bg-color);
+              box-shadow: 7px 9px 9px 0px rgba(0, 0, 0, 0.2);
+              transition: all 235ms cubic-bezier(0.4, 0, 1, 1) 0s;
+              &:hover {
+                transform: translate3d(0, 2px, 0);
+                box-shadow: 4px 9px 7px -4px rgba(0, 0, 0, 0.2);
               }
-            }
-            &:before {
-              content: "";
-              display: block;
-              border: 9px solid transparent;
-              border-right-color: var(--bg-color);
-              position: absolute;
-              top: 12px;
-              left: -18px;
+              > h2 {
+                display: flex;
+                align-items: center;
+                a {
+                  color: #fff;
+                  font-size: 16px;
+                  font-weight: normal;
+                  transform: translateZ(0);
+                }
+              }
+              &:before {
+                content: "";
+                display: block;
+                border: 9px solid transparent;
+                border-right-color: var(--bg-color);
+                position: absolute;
+                top: 12px;
+                left: -18px;
+              }
             }
           }
         }
       }
     }
   }
+  @media (max-width: 930px) {
+    section {
+      .timeline-wrapper {
+        .timeline-item {
+          .timeline-year {
+            left: 16%
+          }
+          .timeline-post {
+            display: block;
+            position: relative;
+            left: 9%;
+            time {
+              margin-left: 23px;
+            }
+            .timeline-content {
+              .timeline-node {
+                margin-left: -5px;
+              }
+              article {
+                width: fit-content;
+              }
+            }
+          }
+        }
+      }
+    }
+}
 </style>
