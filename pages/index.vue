@@ -16,6 +16,9 @@ export default {
   async asyncData ({ $axios }) {
     const posts = await $axios.$get('/api/posts')
     return { posts }
+  },
+  mounted () {
+    console.log('test mounted')
   }
 }
 </script>
