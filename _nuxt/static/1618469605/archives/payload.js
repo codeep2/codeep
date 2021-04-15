@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/archives", {data:[{posts:[{title:2020,tags:["随笔"],created:"2020-12-31",description:"聚光灯外「小人物」2020年的“风云”往事",routeLink:"\u002Fposts\u002F2020-Essay",isYearNode:true}]}],fetch:[],mutations:void 0});
